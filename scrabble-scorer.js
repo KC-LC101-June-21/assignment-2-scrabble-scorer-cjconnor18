@@ -62,10 +62,8 @@ let vowelBonusScore = function (word) {
 };
 
 let scrabbleScore = function (word, structure = newPointStructure) {
-  console.log(structure);
   let score = 0;
   for(let i = 0; i < word.length; i++) {
-    console.log(typeof score);
     score += Number(structure[word[i]]);
   }
   return score;
@@ -121,7 +119,6 @@ function runProgram() {
    let currentWord = initialPrompt();
    let scorerObject = scorerPrompt();
    let score = scorerObject.scoreFunction(currentWord);
-   console.log(typeof score);
    console.log(`Users score for ${currentWord} is ${score}`);
    
 }
