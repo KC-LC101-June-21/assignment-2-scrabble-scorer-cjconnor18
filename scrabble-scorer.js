@@ -108,7 +108,7 @@ function transform(structure) {
   let newStructure = {};
   for(let num in structure) {
     for(let i = 0; i < structure[num].length; i++) {
-      newStructure[structure[num][i]] = Number(num);
+      newStructure[structure[num][i].toLowerCase()] = Number(num);
     }
   }
 
