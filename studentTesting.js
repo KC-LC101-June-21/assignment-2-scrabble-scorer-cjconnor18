@@ -31,11 +31,11 @@ let vowelBonusScoreObj = {
   }
 };
 
-let scrabbleScoreObj = {
-  name: "Scrabble",
-  description: "The traditional scoring algorithm.",
-  scoringFunction: scrabbleScore
-}
+// let scrabbleScoreObj = {
+//   name: "Scrabble",
+//   description: "The traditional scoring algorithm.",
+//   scoringFunction: scrabbleScore
+// }
 
 function oldScrabbleScorer(word) {
 	word = word.toUpperCase();
@@ -97,6 +97,13 @@ let scrabbleScore = function(word) {
   }
   return points;
 };
+
+//moved
+let scrabbleScoreObj = {
+  name: "Scrabble",
+  description: "The traditional scoring algorithm.",
+  scoringFunction: scrabbleScore
+}
 
 const scoringAlgorithms = [simpleScoreObj, vowelBonusScoreObj, scrabbleScoreObj];
 
