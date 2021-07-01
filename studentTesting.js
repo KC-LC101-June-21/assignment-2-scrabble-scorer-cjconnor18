@@ -110,9 +110,7 @@ let scrabbleScore = function(word) {
 let scrabbleScoreObj = {
   name: "Scrabble",
   description: "The traditional scoring algorithm.",
-  scoringFunction: function(word) {
-    return scrabbleScore(word);
-  }
+  scoringFunction:  scrabbleScore
 }
 
 const scoringAlgorithms = [simpleScoreObj, vowelBonusScoreObj, scrabbleScoreObj];
