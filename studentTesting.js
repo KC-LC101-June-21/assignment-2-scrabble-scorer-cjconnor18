@@ -34,7 +34,7 @@ let vowelBonusScoreObj = {
 let scrabbleScoreObj = {
   name: "Scrabble",
   description: "The traditional scoring algorithm.",
-  scoringFunction: scrabbleScore(word)
+  scoringFunction: scrabbleScore
 }
 
 function oldScrabbleScorer(word) {
