@@ -1,4 +1,4 @@
-const solution = require('../scrabble-scorer');
+const solution = require('../studentTesting');
 
 describe("Scrabble Scorer solution", function() {
 
